@@ -5,6 +5,12 @@ def isPrime(n):
         if n % i == 0:
             return False
     return True
+def countPrime(arr):
+    n=0
+    for i in arr:
+        if isPrime(i):
+            n+=1
+    return n
 # Nhận một chuỗi các số nguyên từ người dùng, cách nhau bởi dấu cách
 input_str = input("Enter a list of numbers separated by space: ")
 # Tách chuỗi thành các chuỗi con và chuyển đổi chúng thành số nguyên
