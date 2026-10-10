@@ -1,3 +1,12 @@
+def sortArray(arr):
+    # Sử dụng thuật toán sắp xếp nổi bọt (bubble sort) để sắp xếp mảng
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
 def isPrime(n):
     if n <= 1:
         return False
